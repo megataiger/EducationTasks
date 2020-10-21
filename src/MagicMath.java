@@ -40,8 +40,9 @@ public class MagicMath {
      * @return number in power
      */
     public static int pow(int n, int e) {
+        int baseNumber = n;
         for (int i = 1; i < e; i++) {
-            n *= n;
+            n *= baseNumber;
         }
         return n;
     }
